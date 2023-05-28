@@ -1,62 +1,131 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nerko+One&display=swap" rel="stylesheet">
-    <link href="/dist/output.css" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body class="font-lobster tracking-widest max-w-1600 m-0 lg:px-0 h-full relative">
-
-    <h1 class="text-red-900 text-3xl fixed bottom-24 right-7  transform rotate-90 origin-right">Recettes Rapides !</h1>
-    
-    <!-- background -->
-    <div class="background z-0 w-screen flex justify-between">
-        <div class="flex bg-red-800 bg-opacity-30 h-screen w-px"></div>
-        <div class="flex bg-red-800 bg-opacity-30 h-screen w-px"></div>
-        <div class="flex bg-red-800 bg-opacity-60 h-screen w-0.5"></div>
-        <div class="flex bg-red-800 bg-opacity-30 h-screen w-px"></div>
-        <div class="flex bg-red-800 bg-opacity-30 h-screen w-px"></div>
-        <div class="flex bg-red-800 bg-opacity-60 h-screen w-0.5"></div>
-        <div class="flex bg-red-800 bg-opacity-30 h-screen w-px"></div>
-        <div class="flex bg-red-800 bg-opacity-30 h-screen w-px"></div>
-        <div class="flex bg-red-800 bg-opacity-60 h-screen w-0.5"></div>
-        <div class="flex bg-red-800 bg-opacity-30 h-screen w-px"></div>
-    </div>
+<html lang="fr ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2e02796ae7.js"
+      crossorigin="anonymous"
+    ></script>
    
-
-
-    <!-- container pictures-->
-    <section class="w-full h-screen flex px-2 justify-around flex-col absolute top-0 z-10 ">
-        
-        <div class=""> 
-            <a href="recette.html" alt="lien vers menu sandwich à la viande">
-                <img src="assets/sandwich_viande_min.jpg" class="rounded-full w-16 h-16 ">
+    <link href="./dist/output.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body
+    class="font-lobster tracking-widest  max-w-screen-xl box-content m-0 lg:px-0 h-full relative"
+  >
+  <header class="bg-white max-w-screen-xl relative z-50 fixed top-0 w-full shadow">
+    <h1
+    class="text-red-900 text-3xl max-w  -screen-xl fixed bottom-24 right-7 transform rotate-90 origin-right xl:hidden"
+  >
+    Recettes Rapides !
+  </h1>
+ 
+  <!------------------------ NavBar Responsive---------------------->
+  <nav id="main-nav" class="bg-white max-screen-xl mx-auto p-2 flex items-center justify-between"> 
+    <a href="top" class="flex" aria-label="Page d'accueil du portfolio">
+      <img src="assets/logo.png" class="hidden md:w-7 md:inline md:mr-4">
+      <img src="assets/logo-mobile.png" class="md:hidden">
+    </a>
+    <button aria-label="toggle button" aria-expanded="false" id="menu-btn" class="cursor-pointer w-7 md:hidden">
+      <img src="assets/menu.svg" alt="">
+    </button>
+    <ul 
+    id="toggled-menu"
+    class="bg-white w-full absolute top-full left-0 -translate-y-full -z-10 text-gray-800 border-b border-gray-200 flex flex-col items-center transition-transform md:static md:z-10 md:w-min md:transform-none md:border-none md:flex-row"
+    >
+      <li class="py-4 md:py-0 md:mr-6">
+        <a 
+        href="#"
+        class="text-sm uppercase font-semibold w-full hover:text-colorNav">Acceuil
         </a>
-        </div> 
-        <div class=""> 
-            <a href="recette.html" alt="lien vers menu courgette farcie">
-                <img src="assets/courgette_farcie_min.jpg" class="rounded-full w-16 h-16 rounded-full w-16 h-16--2">
-            </a>
-        </div> 
-        <div class="">
-            <a href="recette.html" alt="lien vers menu grenadin de veau sauce chorizo"> 
-                <img src="assets/grenadin_min.jpg" class="rounded-full w-16 h-16 rounded-full w-16 h-16--3">
-            </a>
-        </div> 
-        <div class=""> 
-            <a href="recette.html" alt="lien vers menu cremeux de petits pois à la menthe">
-                <img src="assets/cremeux_petit_pois_min.jpg" class="rounded-full w-16 h-16 rounded-full w-16 h-16--4">
-            </a>
-        </div> 
-        <div class="">
-            <a href="recette.html" alt="lien vers menu tartare brousse et avocat">
-                <img src="assets/tartare_brousse_min.jpg" class="rounded-full w-16 h-16 rounded-full w-16 h-16--5">
-            </a>
-        </div>
+      </li>
+      <li class="py-4 md:py-0 md:mr-6">
+        <a 
+        href=""
+        class="text-sm uppercase font-semibold w-full hover:text-colorNav">Recettes
+        </a>
+      </li>
+    </ul>
+  </nav>
+ 
+  </header>
+    <!-------------  background -------------------->
+    <div class="background z-0 w-screen max-w-screen-xl flex justify-between">
+      <div class="flex bg-red-800 bg-opacity-30 h-screen w-px"></div>
+      <div class="flex bg-red-800 bg-opacity-30 h-screen w-px"></div>
+      <div class="flex bg-red-800 bg-opacity-60 h-screen w-0.5"></div>
+      <div class="flex bg-red-800 bg-opacity-30 h-screen w-px"></div>
+      <div class="flex bg-red-800 bg-opacity-30 h-screen w-px"></div>
+      <div class="flex bg-red-800 bg-opacity-60 h-screen w-0.5"></div>
+      <div class="flex bg-red-800 bg-opacity-30 h-screen w-px"></div>
+      <div class="flex bg-red-800 bg-opacity-30 h-screen w-px"></div>
+      <div class="flex bg-red-800 bg-opacity-60 h-screen w-0.5"></div>
+      <div class="flex bg-red-800 bg-opacity-30 h-screen w-px"></div>
+    </div>
 
+    <!---------  text-appear ------------->
+    <section>
+      <div class="text_appear text-4xl top-1/3 left-1/4 absolute md:left-1/3 md:font-lobster">
+      </div>
     </section>
-</body>
+    <!-- container pictures-->
+    <section
+      class="w-auto h-screen pt-5 fixed flex px-2 justify-around flex-col absolute top-0 md:pt-7"
+    >
+      <div class="">
+        <a href="recette.html" alt="lien vers menu sandwich à la viande">
+          <img
+            src="assets/sandwich_viande_min.jpg"
+            class="rounded-full w-16 h-16"
+          />
+        </a>
+      </div>
+      <div class="">
+        <a href="recette.html" alt="lien vers menu courgette farcie">
+          <img
+            src="assets/courgette_farcie_min.jpg"
+            class="rounded-full w-16 h-16 rounded-full w-16 h-16--2"
+          />
+        </a>
+      </div>
+      <div class="">
+        <a
+          href="recette.html"
+          alt="lien vers menu grenadin de veau sauce chorizo"
+        >
+          <img
+            src="assets/grenadin_min.jpg"
+            class="rounded-full w-16 h-16 rounded-full w-16 h-16--3"
+          />
+        </a>
+      </div>
+      <div class="">
+        <a
+          href="recette.html"
+          alt="lien vers menu cremeux de petits pois à la menthe"
+        >
+          <img
+            src="assets/cremeux_petit_pois_min.jpg"
+            class="rounded-full w-16 h-16 rounded-full w-16 h-16--4"
+          />
+        </a>
+      </div>
+      <div class="">
+        <a href="recette.html" alt="lien vers menu tartare brousse et avocat">
+          <img
+            src="assets/tartare_brousse_min.jpg"
+            class="rounded-full w-16 h-16 rounded-full w-16 h-16--5"
+          />
+        </a>
+      </div>
+    </section>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="script/script.js"></script>
+  </body>
 </html>
