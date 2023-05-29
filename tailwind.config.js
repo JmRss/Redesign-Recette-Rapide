@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html', './script/script.js*'],
+  content: ['./index.html', './script/script.js*', './recette.html'],
   theme: {
     fontFamily: {
       lobster: ['Lobster', 'cursive'],
