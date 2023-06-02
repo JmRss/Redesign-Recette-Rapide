@@ -1,81 +1,89 @@
-
-.card.flip, .card--2.flip, .card--3.flip, .card--4.flip, .card--5.flip {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.5) perspective(1000px) rotateY(180deg);
-    background-color: white;
-    z-index: 60;
-  }
-  
-.card.flip {
-    height: 580px;
-}
-  
-.card--2.flip {
-    height: 500px;
-    transform: translate(-50%, -50%) scale(1.4) perspective(1000px) rotateY(180deg);
-}
-  
-.card--3.flip {
-    height: 520px;
-}
-  
-.card--4.flip {
-    height: 470px;
-    margin: 0;
-}
-  
+.card.flip,
+.card--2.flip,
+.card--3.flip,
+.card--4.flip,
 .card--5.flip {
-    height: 450px;
-}
-  
-.body--flip {
-    -webkit-animation: background-change ease 1000ms both;
-            animation: background-change ease 1000ms both;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.5) perspective(1000px)
+    rotateY(180deg);
+  background-color: white;
+  z-index: 60;
 }
 
+.card.flip {
+  height: 580px;
+}
+
+.card--2.flip {
+  height: 500px;
+  transform: translate(-50%, -50%) scale(1.4) perspective(1000px)
+    rotateY(180deg);
+}
+
+.card--3.flip {
+  height: 520px;
+}
+
+.card--4.flip {
+  height: 470px;
+  margin: 0;
+}
+
+.card--5.flip {
+  height: 450px;
+}
+
+.body--flip {
+  -webkit-animation: background-change ease 1000ms both;
+  animation: background-change ease 1000ms both;
+}
 
 .card-front {
-    background-image: url("assets/sandwich_viande.jpg");
-}
-  
-.front-2 {
-    background-image: url("assets/grenadin.jpg");
-}
-  
-.front-3 {
-    background-image: url("assets/courgette_farcie.jpg");
-}
-  
-.front-4 {
-    background-image: url("assets/tartare_brousse.jpg");
-}
-  
-.front-5 {
-    background-image: url("assets/cremeux_petit_pois.jpg");
-}
-  
-@media screen and(max-width: 900px){
-    .card.flip, .card--2.flip, .card--3.flip, .card--4.flip, .card--5.flip {
-        top: 0;
-        left: 0;
-        transform: translate(1px, 1px) scale(1) perspective(1000px) rotateY(180deg);
-      }
-      .card.flip {
-        height: 670px;
-      }
-      .card.flip h3 {
-        width: 100%;
-        text-align: center;
-      }
-      .card--2.flip {
-        height: 760px;
-      }
-      .card--3.flip {
-        height: 600px;
-      }
-      .card--4.flip, .card--5.flip {
-        height: 550px;
-      }
+  background-image: url('assets/sandwich_viande.jpg');
 }
 
+.front-2 {
+  background-image: url('assets/grenadin.jpg');
+}
+
+.front-3 {
+  background-image: url('assets/courgette_farcie.jpg');
+}
+
+.front-4 {
+  background-image: url('assets/tartare_brousse.jpg');
+}
+
+.front-5 {
+  background-image: url('assets/cremeux_petit_pois.jpg');
+}
+
+@media screen and(max-width: 900px) {
+  .card.flip,
+  .card--2.flip,
+  .card--3.flip,
+  .card--4.flip,
+  .card--5.flip {
+    top: 0;
+    left: 0;
+    transform: translate(1px, 1px) scale(1) perspective(1000px) rotateY(180deg);
+  }
+  .card.flip {
+    height: 670px;
+  }
+  .card.flip h3 {
+    width: 100%;
+    text-align: center;
+  }
+  .card--2.flip {
+    height: 760px;
+  }
+  .card--3.flip {
+    height: 600px;
+  }
+  .card--4.flip,
+  .card--5.flip {
+    height: 550px;
+  }
+}
