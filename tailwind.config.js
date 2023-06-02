@@ -1,3 +1,5 @@
+const purgecss = require('@fullhuman/postcss-purgecss');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./index.html', './script/script.js', './recette.html'],
@@ -13,5 +15,11 @@ module.exports = {
       },
     },
   },
-  plugins: [],
-}
+  plugins: [
+    require('tailwindcss'),
+    purgecss({
+      content: ['./index.html', './recette.html'],
+      defaultExtractor: (content) => content.match(/[A-Za-z0-9-_:/]+/g) || [],
+    }),
+  ],
+};

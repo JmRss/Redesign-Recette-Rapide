@@ -2,7 +2,12 @@
   "devDependencies": {
     "tailwindcss": "^3.3.2"
   },
-  "scripts":{
-    "start":"npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  "scripts": {
+    "start": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch && npx tailwindcss purge -c ./tailwind.config.js -i ./dist/output.css -o ./dist/output.css"
+  },
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "postcss": "^8.4.24",
+    "purgecss": "^5.0.0"
   }
 }
