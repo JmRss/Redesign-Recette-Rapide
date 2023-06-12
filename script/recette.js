@@ -20,6 +20,19 @@ const scrollTop = document.querySelector('.arrow');
 ////event navbar responsive /////
 toggleMenuBtn.addEventListener('click', toggleNav);
 
+/// function navbar ///
+function toggleNav() {
+  toggledMenu.classList.toggle('-translate-y-full');
+
+  if (toggledMenu.classList.contains('-translate-y-full')) {
+    toggleMenuImg.setAttribute('src', 'assets/menu.svg');
+    toggleMenuBtn.setAttribute('aria-expanded', 'false');
+  } else {
+    toggleMenuImg.setAttribute('src', 'assets/cross.svg');
+    toggleMenuBtn.setAttribute('aria-expanded', 'true');
+  }
+}
+
 ////button scroll to top////
 scrollTop.onclick = () => {
   window.scrollTo({
@@ -56,19 +69,6 @@ document.addEventListener('click', function (event) {
     flipActive5.classList.remove('flip_card--active');
   }
 });
-
-/// function navbar ///
-function toggleNav() {
-  toggledMenu.classList.toggle('-translate-y-full');
-
-  if (toggledMenu.classList.contains('-translate-y-full')) {
-    toggleMenuImg.setAttribute('src', 'assets/menu.svg');
-    toggleMenuBtn.setAttribute('aria-expanded', 'false');
-  } else {
-    toggleMenuImg.setAttribute('src', 'assets/cross.svg');
-    toggleMenuBtn.setAttribute('aria-expanded', 'true');
-  }
-}
 ///////add margin-bottom to card when flip /////
 function changeMargin(event) {
   containerFlip.classList.toggle('container-height');
