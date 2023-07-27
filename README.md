@@ -1,3 +1,3 @@
-# Refonte design / tailwindcss screen portfolio pas à jours #
+# Refonte design / tailwindcss #
 
 live netlify: https://recettes-rapides-tailwind.netlify.app/
